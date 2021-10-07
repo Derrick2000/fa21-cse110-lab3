@@ -1,4 +1,4 @@
-# CSE110-Lab2
+# FA21-CSE110-LAB3
 Published Page Link<br/>
 <br/>
-[Github Page Link](https://derrick2000.github.io/CSE110-Lab2/)
+[Github Page Link](https://derrick2000.github.io/fa21-cse110-lab3/)
