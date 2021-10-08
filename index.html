@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
+    <head> 
         <meta charset="UTF-8"/>
         <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico"/>
-        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest"> -->
+        <!-- self-made css file -->
+        <link rel="stylesheet" href="css/lab3.css"> 
         <title>Chinese Computer Community(Triple C) Weekly Meeting</title> 
     </head>
+    <style>
+        h6{
+            color:cornflowerblue
+        }
+    </style>
     <body>
+        
         <header>
-            <h1>Triple C Weekly Meeting</h1>
-            <h3>October 1, 2021</h3>
+            <h1 id="center">Triple C Weekly Meeting</h1>
+            <h7 class="date">October 1, 2021</h7>
         </header>
         <main>
             <h2>Meeting Attandence</h2>
             <ul>
-                <li><b>Leader Kevin Boyle</b></li>
-                <li><b>Leader Ben Witherspoon</b></li>
-                <li>Mingyu Li</li>
-                <li>Isiah Castro</li>
-                <li>Charles Nogard</li>
-                <li>Mengqi Wu</li>
-                <li>Joshua Weaver</li>
+                <li class="leader"><b>Leader Kevin Boyle</b></li>
+                <li class="leader" style="position: relative;left:20px"><b>Leader Ben Witherspoon</b></li>
+                <li class="member">Mingyu Li</li>
+                <li class="member">Isiah Castro</li>
+                <li class="member">Charles Nogard</li>
+                <li class="member">Mengqi Wu</li>
+                <li class="member">Joshua Weaver</li>
             </ul>
     
             <br/>
@@ -64,13 +67,13 @@
         
 
             <br/>
-            <section>
-                <h4>Recording</h4>
+            <section class="gridBox">
+                <h4 id="recording-title">Recording</h4>
                 <video controls>
                     <source src="videos/MeetingRec.mp4" type="video/mp4">
                 </video>
 
-                <h4>Audio</h4>
+                <h4 id="audio-title">Audio</h4>
                 <audio controls src="videos/MeetingAud.mp3">
                     <code>audio</code>
                 </audio>
@@ -78,12 +81,12 @@
 
 
             <br/>
-            <h2>Plan (Next cycle)</h2>
-            <div>EM-41</div>
+            <h2 style="margin:3mm;">Plan (Next cycle)</h2>
+            <div style="color:blue; margin:1cm;">EM-41</div>
 
-                <p><em>Frontend</em>: finish the login page</p>
+                <p style="margin: 20px;" class="fe"><em>Frontend</em>: finish the login page</p>
                 <hr>
-                <p><em>Backend</em>: Complete the dao(data) level</p>
+                <p style="margin: 20px;" class="be"><em>Backend</em>: Complete the dao(data) level</p>
                 
             <br/>
             <h2>Concerns</h2>
@@ -99,12 +102,12 @@
             <br/>
             <h3>Give us feedback</h3>
             <form>
-                <div>
+                <div class="descendant_comb">
                     <label>Your name: </label>
                     <input type="text">
                 </div>
                 <br/>
-                <div>
+                <div class="child_comb">
                     <label>Your suggestions</label>
                     <textarea></textarea>
                 </div>
@@ -116,12 +119,10 @@
                 <br/>
                 <fieldset>
                     <legend>About You</legend>
-                    <div>
+                    <div class="flexBox">
                         <p>Are you part of the CCC Program?</p>
                         <input type="radio" name="CBD">
                         <label>Yes</label>
-                    </div>
-                    <div>
                         <input type="radio" name="CBD" >
                         <label>No</label>
                     </div>
@@ -166,7 +167,7 @@
 
 
         <footer>
-            <h6>Follow Us</h6>
+            <h6 style="position: absolute;right: 5px;">Follow Us</h6>
         </footer>
         
     </body>

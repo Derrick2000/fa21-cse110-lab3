@@ -1,0 +1,148 @@
+
+body{
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    display: grid;
+    color:gold;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    height: 60px;
+    min-width: none;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+@media only screen and (max-width: 1000px){
+    h1{
+        display: grid;
+        color:green;
+        text-decoration: underline;
+        font-family: 'Courier New', Courier, monospace;
+        height: 60px;
+        min-width: none;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
+        
+    }
+}
+
+*{
+    margin: 7px;
+}
+
+
+
+h1#center{
+    text-align: center;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 1150px;
+    margin-bottom: 10px;
+    color: rgb(90, 90, 241);
+    border-style: dotted;
+    border-color: purple;
+    border-width:thin;
+    border-radius: 1cm;
+}
+
+h3{
+    color: #FF00ff;
+    width: 100px;
+    max-width: 200px;
+    /* padding: */
+    /* margin-left: 20px; */
+
+    
+}
+
+h4{
+    color: hsl(0, 100%, 50%);
+    display: inline;
+}
+
+.date{
+    background-color: gold;
+}
+
+li[class="leader"]{
+    background-color: yellow;
+}
+
+.fe,
+.be{
+    color:green;
+}
+
+.descendant_comb label{
+    color: green;
+}
+
+.child_comb > label{
+    color: green;
+}
+
+h2 + p{
+    color:grey;
+}
+
+legend ~ div{
+    color:khaki;
+}
+
+ul > li[class="member"]{
+    color: lawngreen;
+}
+
+button:hover{
+    color: blue;
+}
+
+button:active{
+    color:gold;
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(92, 92, 92);
+    justify-content: flex-start;
+}
+
+.flexBox > p {
+    align-self: 'center';
+    font-size: 2em;
+}
+
+.gridBox {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'header2 header2 header2 header2 header2 header2'
+    'main2 main2 main2 main2 main2 main2';
+    grid-gap: 5px;
+}
+
+.gridBox > #recording-title {
+    grid-area: header;
+}
+
+.gridBox > #audio-title {
+    grid-area: header2;
+}
+
+.gridBox > video {
+    grid-area: main;
+}
+
+.gridBox > audio {
+    grid-area: main2;
+}
